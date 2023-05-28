@@ -1,0 +1,85 @@
+[
+    {
+      "product-id" : 3301,
+      "name": "MacBook Pro",
+      "brand": "Apple",
+      "price": 1299,
+      "screen_size": 13.3,
+      "processor": "Intel Core i5",
+      "ram": 8,
+      "storage": 256,
+      "operating_system": "macOS",
+      "image_url":"macbook.jpg"
+    },
+    {
+      "product-id" : 3302,  
+      "name": "Dell XPS 13",
+      "brand": "Dell",
+      "price": 999,
+      "screen_size": 13.3,
+      "processor": "Intel Core i5",
+      "ram": 8,
+      "storage": 256,
+      "operating_system": "Windows 11",
+      "image_url": "https://www.dell.com/en-us/shop/dell-xps-13-laptop/spd/xps-13-9310-laptop/cn7521w32"
+    },
+    {
+      "product-id" : 3303,
+      "name": "HP Spectre x360",
+      "brand": "HP",
+      "price": 1199,
+      "screen_size": 13.3,
+      "processor": "Intel Core i7",
+      "ram": 16,
+      "storage": 512,
+      "operating_system": "Windows 11",
+      "image_url": "https://www.hp.com/us-en/shop/pdp/hp-spectre-x360-13-aw0000-laptop-%282022%29"
+    },
+    {
+      "product-id" : 3304,  
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "brand": "Lenovo",
+      "price": 1499,
+      "screen_size": 14,
+      "processor": "Intel Core i7",
+      "ram": 16,
+      "storage": 512,
+      "operating_system": "Windows 11",
+      "image_url": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpad-x1-carbon/x1-carbon-g9/22tp0010us"
+    },
+    {
+      "product-id" : 3305,
+      "name": "Microsoft Surface Laptop 4",
+      "brand": "Microsoft",
+      "price": 999,
+      "screen_size": 13.5,
+      "processor": "Intel Core i5",
+      "ram": 8,
+      "storage": 256,
+      "operating_system": "Windows 11",
+      "image_url": "https://www.microsoft.com/en-us/p/surface-laptop-4/8n2z8n622469"
+    },
+    {
+      "product-id" : 3306,
+      "name": "Asus ZenBook 13",
+      "brand": "Asus",
+      "price": 999,
+      "screen_size": 13.3,
+      "processor": "Intel Core i5",
+      "ram": 8,
+      "storage": 256,
+      "operating_system": "Windows 11",
+      "image_url": "https://www.asus.com/us/Laptops/For-Home/ZenBook/ZenBook-13-UX325EA/"
+    },
+    {
+      "product-id" : 3307,
+      "name": "Acer Swift 3",
+      "brand": "Acer",
+      "price": 799,
+      "screen_size": 13.3,
+      "processor": "Intel Core i5",
+      "ram": 8,
+      "storage": 256,
+      "operating_system": "Windows 11",
+      "image_url": "https://www.acer.com/ac/en/US/content/model/A"
+    }]
