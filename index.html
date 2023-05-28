@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&family=Poppins:wght@200;300;400;500&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/d2fa9a823e.js" crossorigin="anonymous"></script>
+    <title>Nexus</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="logo-wrapper">
+                    <h1>nexa</h1>
+                </div>
+                <div class="main-menu-wrapper">
+                    <ul class="main-menu-list">
+                        <li class="main-menu"><a href="#"><span>mobile</span></a></li>
+                        <li class="main-menu"><a href="#"><span>laptops</span></a></li>
+                        <li class="main-menu"><a href="#"><span>monitors</span></a></li>
+                        <li class="main-menu"><a href="#"><span>tv</span></a></li>
+                        <li class="main-menu"><a href="#"><span>av</span></a></li>
+                    </ul>
+                </div>
+                <div class="utility-wrapper">
+                    <ul class="utility">
+                        <li class="utility-list"><a href="#" class="utility-search"><i class="fa-solid fa-magnifying-glass iconic"></i></a></li>
+                        <li class="utility-list"><a href="#" class="utility-cart" id="cart-icon"><i class="fa-solid fa-cart-shopping iconic"></i></a></li>
+                        <li class="utility-list"><a href="#" class="utility-login"><i class="fa-regular fa-user iconic"></i></a></li>
+                        <li class="utility-list"><a href="#" class="utility-hamburger-menu"><i class="fa-solid fa-bars iconic"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="product-list-wrapper">
+            <div class="main-content-left">
+                <div class="filter-wrapper">
+                    <div class="sort-box">
+                        <span class="sort-heading">sort</span><br>
+                        <button class="new-filter-button filter-button accordion"><span class="sort-label-heading">Newest first</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="filter-container">
+                            <button class="low-high-filter-button filter-button"><span class="sort-label-heading">Price - Low to High</span></button>
+                            <button class="high-low-filter-button filter-button"><span class="sort-label-heading">Price - High to Low</span></button>
+                        </div>
+                    </div>
+                    <span class="filter-heading">filter</span>
+                    <div class="filterAccordianList">
+                        <button class="accordion" id="brand-div"><span class="filter-heading">Brand</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <form id="brand-checkbox">
+                            <fieldset>
+                                <div><input type="checkbox" id="apple" value="Apple" class="laptop-manufacturer"><label for="apple">Apple</label></div>
+                                <div><input type="checkbox" id="dell" value="Dell" class="laptop-manufacturer"><label for="dell">Dell</label></div>
+                                <div><input type="checkbox" id="hp" value="Hp" class="laptop-manufacturer"><label for="hp">HP</label></div>
+                                <div><input type="checkbox" id="asus" value="Asus" class="laptop-manufacturer"><label for="asus">Asus</label></div>
+                                <div><input type="checkbox" id="razer" value="Razer" class="laptop-manufacturer"><label for="razer">Razer</label></div>
+                            </fieldset>
+                        </form>
+                        <button class="accordion"><span class="filter-heading">Processors</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <form id="processor">
+                            <fieldset>
+                                <div><input type="checkbox" id="intel" value="Intel" class="processor-checkbox"><label for="intel">Intel Platform</label></div>
+                                <div><input type="checkbox" id="amd" value="Amd" class="processor-checkbox"><label for="amd">AMD Platform</label></div>
+                                <div><input type="checkbox" id="arm" value="ARM" class="processor-checkbox"><label for="arm">Apple ARM</label></div>
+                            </fieldset>
+                        </form>
+                        <button class="accordion"><span class="filter-heading">Memory</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <form id="memory">
+                            <fieldset>
+                                <div><input type="checkbox" id="eight" value="8" class="memory-checkbox"><label for="eight">8 GB</label></div>
+                                <div><input type="checkbox" id="sixteen" value="16" class="memory-checkbox"><label for="sixteen">16 GB</label></div>
+                                <div><input type="checkbox" id="twenty-four" value="24" class="memory-checkbox"><label for="twenty-four">24 GB</label></div>
+                                <div><input type="checkbox" id="thrity-two" value="32" class="memory-checkbox"><label for="thrity-two">32 GB</label></div>
+                            </fieldset>
+                        </form>
+                        <button class="accordion"><span class="filter-heading">Graphics</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <form id="graphics">
+                            <fieldset>
+                                <div><input type="checkbox" id="rtxseries" value="RTX" class="graphics-checkbox"><label for="rtxseries">GeForce RTX Series</label></div>
+                                <div><input type="checkbox" id="gtxseries" value="GTX" class="graphics-checkbox"><label for="gtxseries">GeForce GTX Series</label></div>
+                                <div><input type="checkbox" id="radeon" value="Radeon" class="graphics-checkbox"><label for="radeon">AMD Radeon Series</label></div>
+                                <div><input type="checkbox" id="mseries" value="M" class="graphics-checkbox"><label for="mseries">Apple M Series</label></div>
+                            </fieldset>
+                        </form>            
+                        <button class="accordion"><span class="filter-heading">Price</span><i class="fa-solid fa-chevron-down"></i></button> 
+                        <div class="range-slider"> 
+                            <div id="slider-range"></div>
+                            <p>
+                              <input type="text" id="amount" readonly style="border:0; color:#463F5F; font-weight:bold;">
+                            </p>
+                        </div>    
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-content-right">
+                <div id="product-wrapper"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="comparison-modal" class="modal">
+            <div class="modal-content">
+                <h3>Product Comparison</h3>
+                <span class="close">&times;</span>
+                <div id="comparision-products-list"></div>
+                <button id="compare-button">Compare</button>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="java/main.js"></script>
+</body>
+</html>
